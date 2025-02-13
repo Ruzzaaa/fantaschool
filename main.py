@@ -6,6 +6,7 @@ def open_window(title, create_func):
     window = tk.Toplevel()
     window.title(title)
     window.geometry("400x700")
+    window.resizable(False,False)
     create_func(window)
 
 def create_registrazione(window):
